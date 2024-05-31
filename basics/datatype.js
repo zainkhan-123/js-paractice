@@ -1,16 +1,16 @@
-const bigNumber = 234567866667n
+// const bigNumber = 234567866667n
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
-const myfunction = function(){
-    console.log("hello wolrd")
+// const myfunction = function(){
+//     console.log("hello wolrd")
 
-}
-console.log(typeof myfunction)
+// }
+// console.log(typeof myfunction)
 
-//==========================================
-//stack( primitive), heap (non primitive)//
+// //==========================================
+// //stack( primitive), heap (non primitive)//
 
-let myyoutubeName = "zainiqbal"
-let anotherName = myyoutubeName
-console.log(anotherName)
+// let myyoutubeName = "zainiqbal"
+// let anotherName = myyoutubeName
+// console.log(anotherName)
