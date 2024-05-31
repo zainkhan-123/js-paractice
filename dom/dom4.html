@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom remove & edit</title>
+</head>
+<body style="background-color: #212121; color :aliceblue">
+<ul class="language">
+<li>
+javascript 
+
+</li>
+
+</ul>
+</body>
+<script>
+function addlanguage(langname){
+    const Li = document.createElement('li') 
+    Li.innerHTML = langname
+    document.querySelector('.language').appendChild(Li)
+
+
+}
+
+addlanguage("phyton")
+
+// this is optimization way 
+function addoptilanguage ( langename){
+  const  li = document.createElement("li")
+  li.appendChild(document.createTextNode(langename))
+  document.querySelector(".language").appendChild(li)
+}
+addoptilanguage("zain")
+//edit
+
+ const  secondchild = document.querySelector("li:nth-child(2)")
+  const li = document.createElement("li")
+  li.textContent = "zain khani"
+  secondchild.replaceWith(li)
+
+// edit 
+const langchang = document.querySelector("li:first-child")
+ console.log(langchang);
+ langchang.outerHTML = '<li>c++</li>'
+
+ // remove 
+ const lastlange = document.querySelector("li:last-child")
+ console.log(lastlange);
+ lastlange.remove()
+</script>
+</html>
